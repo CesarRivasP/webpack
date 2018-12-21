@@ -1,0 +1,600 @@
+/** {
+  width: tamaño;
+  height: tamaño;
+  padding: 10px;
+  padding-top: 10px;
+  padding-right: 13px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding: 10px 13px 5px 15px;
+  margin: 10px;
+  margin-top: 10px;
+  margin-right: 13px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  margin: 10px 13px 5px 15px;
+  border: 2px solid red;
+}*/
+
+body {
+  font-family: 'Allerta', sans-serif;
+  margin: 0;
+}
+
+
+table {
+  width: 100%;
+}
+
+th {
+  background: #273b47;
+  color: white;
+}
+
+th {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
+input, textarea {
+  outline: 0;
+}
+
+input:focus, textarea:focus {
+  background: lightgray;
+}
+
+.contenedor {
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.background {
+  background-image: url(/home/dev25/learn/FrontEnd/webpack/invie/dist/images/background.cba5fb6368a2ff90d62cc89f9ffefc58.png);
+  background-size: cover;
+}
+
+.portada.background.is-animated {
+  background-image: url(/home/dev25/learn/FrontEnd/webpack/invie/dist/images/team-platzi-azul.70297162b2ac4eb6ac54a0ddd5f85bfe.jpg);
+  background-repeat: no-repeat;
+  animation: background 15s linear infinite alternate;
+}
+
+@keyframes background {
+  0% {
+    background-size: 200%;
+    background-position: center;
+  }
+  20% {
+    background-position: right top;
+  }
+
+  40% {
+    background-position: center;
+    background-size: 100%;
+  }
+  60% {
+    background-position: left top;
+  }
+
+  80% {
+    background-position: left -100px;
+  }
+  100% {
+    background-position: right -100px;
+    background-size: 200%;
+  }
+}
+
+.button {
+  border-radius: 12px;
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  background: #fd324e;
+  background: linear-gradient(to left, #fe344e, #ff7250);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
+  /*background: rgb(243,197,189); /* Old browsers */
+  /* background: -moz-linear-gradient(top,  rgba(243,197,189,1) 0%, rgba(232,108,87,1) 50%, rgba(234,40,3,1) 51%, rgba(255,102,0,1) 75%, rgba(199,34,0,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
+  background: linear-gradient(to bottom,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); */
+
+}
+
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+
+.titulo span {
+  text-decoration: underline;
+}
+
+.title-a {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.title-b {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.guitarras {
+  color: #1F313C;
+  margin-bottom: 60px;
+}
+
+.guitarras h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+
+
+
+.portada {
+
+  color: white;
+  padding: 20px;
+  height: 500px;
+}
+
+.portada button {
+  margin-bottom: 70px;
+}
+
+
+.menu {
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.menu li:before{
+  content: '\2218';
+  font-size: 50px;
+  line-height: 20px;
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.logotipo {
+  display: inline-block;
+  margin-left: 0;
+}
+
+
+.guitarra {
+  margin: 10px 0 40px;
+  padding: 10px 2em;
+  /*overflow: hidden;*/
+  border: 1px solid #1F313C;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  min-height: 250px;
+  transition: .3s;
+  position: relative;
+}
+
+.guitarra:hover {
+  /*box-shadow: x y % color;*/
+  box-shadow: 10px 10px 0 #ff3149;
+}
+.guitarra-name {
+  font-size: 3em;
+  margin: 0 0 .2em;
+  padding-bottom: .2em;
+  border-bottom: 2px dashed #1e313d;
+}
+/*.guitarra:nth-of-type(2) {*/
+/*.guitarra:nth-of-type(odd) {*/
+.guitarra:nth-of-type(even):hover {
+  box-shadow: -10px 10px 0 black;
+}
+.guitarra:nth-of-type(even) {
+  /*background: green;*/
+  justify-content: flex-end;
+}
+.guitarra:nth-of-type(even) .guitarra-image {
+  left: 0;
+  right: initial;
+}
+.guitarra-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.guitarra ol {
+  padding: 0;
+  list-style: none;
+  counter-reset: features;
+}
+.guitarra li:before {
+  counter-increment: features;
+  content: counter(features) ". ";
+}
+
+/*.guitarra.b {
+  height: 190px;
+}*/
+
+
+/*.derecha {
+  float: right;
+  position: relative;
+  top: -127px;
+}
+
+.izquierda {
+  float: left;
+  position: relative;
+}*/
+
+.contenedor-guitarra-a {
+  padding-left: 20px;
+}
+.contenedor-guitarra-b {
+  margin-left: 370px;
+  position: relative;
+  bottom: 90px;
+
+}
+
+.header {
+  position: relative;
+}
+
+
+.footer {
+  background: #273b47;
+  padding: 50px 10px;
+}
+
+.contacto {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contacto img {
+  display: block;
+}
+
+.contacto strong {
+  display: block;
+}
+
+.contacto a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0;
+}
+
+
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.formulario {
+  display: flex;
+  width: 400px;
+  color: white;
+}
+
+
+.col1, .col2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col1 {
+  margin-right: 15px;
+}
+.col2 {
+  align-items: flex-start;
+}
+
+.col2 .button {
+  margin-top: 15px;
+}
+
+.intereses label {
+  font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses {
+  margin-bottom: 10px;
+}
+
+
+.sexo {
+  margin-top: 10px;
+}
+
+
+.tabla {
+  margin: 50px 0;
+}
+
+.flicker {
+
+}
+
+.flicker-enter {
+  animation-duration: .5s, .7s;
+  animation-name: flicker, shake;
+  animation-timing-function: linear, ease-in-out;
+}
+
+.flicker-enter-active {
+
+}
+
+.flicker-leave {
+  animation-duration: .5s, .7s;
+  animation-name: flicker, shake;
+  animation-timing-function: linear, ease-in-out;
+}
+
+.flicker-leave-active {
+
+}
+
+
+@keyframes flicker {
+  from {
+    opacity: 0.5;
+    transform: rotateY(0);
+  }
+  4% {
+    opacity: .5;
+  }
+  6% {
+    opacity: .45;
+  }
+  8% {
+    opacity: .55;
+  }
+  10% {
+    opacity: .45;
+  }
+  11% {
+    opacity: .5;
+  }
+  12% {
+    opacity: .65;
+  }
+  14% {
+    opacity: .55;
+  }
+  16% {
+    opacity: .70;
+  }
+  17% {
+    opacity: .55;
+  }
+  19% {
+    opacity: .5;
+  }
+  20% {
+    opacity: .5;
+  }
+  24% {
+    opacity: .5;
+  }
+  26% {
+    opacity: .69;
+  }
+  28% {
+    opacity: .5;
+  }
+  38% {
+    opacity: .45;
+  }
+  40% {
+    opacity: .5;
+  }
+  42% {
+    opacity: .6;
+  }
+  44% {
+    opacity: .5;
+  }
+  46% {
+    opacity: .5;
+  }
+  56% {
+    opacity: .5;
+  }
+  58% {
+    opacity: .75;
+  }
+  60% {
+    opacity: .5;
+  }
+  68% {
+    opacity: .5;
+  }
+  70% {
+    opacity: .6;
+  }
+  72% {
+    opacity: .5;
+  }
+  93% {
+    opacity: .5;
+  }
+  95% {
+    opacity: .6;
+  }
+  97% {
+    opacity: .5;
+  }
+  to {
+    opacity: .5;
+    transform: rotateY(360deg);
+
+  }
+
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-1px);
+  }
+  20%, 80% {
+    transform: translateX(2px);
+  }
+
+  30% , 50%, 70%{
+    transform: translateX(-4px);
+  }
+  40%, 60% {
+    transform: translateX(4px);
+  }
+}
+
+
+.fade {
+
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: scale(.5);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: .3s;
+}
+
+.fade-leave {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-leave-active {
+  opacity: 0;
+  transform: scale(.5);
+  transition: .3s;
+}
+
+/*animation: animationOut .8s forwards;*/
+.animationInOut-enter {
+  animation: animationIn .8s;
+}
+
+.animationInOut-leave {
+  animation: animationOut .8s;
+}
+
+@keyframes animationIn {
+  0% {
+    transform: translateY(-3000px);
+  }
+  60% {
+    transform: translateY(25px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes animationOut {
+  0% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-3000px);
+  }
+}
+
+
+.like {
+  cursor: pointer;
+  /*width: 100px;
+  height: 100px;*/
+  width: 50px;
+  height: 50px;
+  background-image: url(/home/dev25/learn/FrontEnd/webpack/invie/dist/images/corazon.45598562077bdc84281b5330ff4d283e.png);
+  /*background-size: x y;*/
+  background-size: 1450px 50px;
+  /*background: red;*/
+  bottom: -100px;
+  position: fixed;
+}
+.like.is-liked {
+  animation-name: like, move;
+  /*animation-duration: 800ms;*/
+  animation-duration: .8s, 5s;
+  /*2900 / 29 = 100px*/
+  animation-timing-function: steps(28), linear;
+  /*background-position: -2800px 0;*/
+  /*background-position: right;*/
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite, 1;
+}
+@keyframes like {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: right;
+    /*background-position: -2800px 0;*/
+  }
+}
+
+@keyframes move {
+  from {
+    position: absolute;
+    bottom: 0;
+  }
+  to {
+    position: absolute;
+    bottom: 110%;
+  }
+}
+
